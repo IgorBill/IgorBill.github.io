@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        p {
+            color: red;
+        }
+        .exciting {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+
+        /* TASK 4 */
+        /* Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. */
+        body {
+            background: var(--bgColor);
+        }
+        div {
+            --bgColor: limegreen;
+        }
+        /*
+        визначте для елементів p властивість фону таким чином:
+        background: var(--bgColor);
+        */
+        p {
+            background: var(--bgColor);
+        }
+        /* ВІДПОВІДЬ: Фон буде limegreen тому, що змінні CSS можна використовувати до того, як вони будуть оголошені.*/
+    </style>
+</head>
+<body>
+
+    <!-- TASK 1 -->
+
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+    <!-- На сайті Wikipedia знайдіть сторінку про CSS українською мовою -->
+    <!-- Додайте тут елеиент iframe з посиланням на українську версію Wikipedia page for the CSS language -->
+    <!-- В елементі iframe визначте атрибут title зі значенням Сторінка Вікіпедії для мови CSS -->
+    <iframe title="Сторінка Вікіпедії для мови CSS" src="https://uk.wikipedia.org/wiki/CSS" width="600" height="300"></iframe>
+
+
+    <!-- TASK 2 --> 
+
+    <!-- Додайте тут елеиент p з текстом This is my paragraph.
+		визначте атрибут style для тега p зі значенням color: blue; -->
+    <p style="color: blue;">This is my paragraph.</p>
+    <!-- Який колір буде мати текст This is my paragraph і чому. -->
+    <!-- Відповідь: color: blue; Тому що стилі застосовуються в тому порядку, в якому вони підключені -->
+
+    <!-- TASK 3 --> 
+    
+    <!-- У наступному фпагменті виправити помилки -->
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
+    <div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
+    <!-- Відповідь:  id замінив на class, тому що не може бути 2 однакових id-->
+
+    <!-- TASK 4 -->
+    <!-- Додайте тут 2 елементи div: -->
+    <div>
+        <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+    
+    <div>
+        <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div>
+</body>
+</html>
