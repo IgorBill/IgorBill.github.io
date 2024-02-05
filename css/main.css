@@ -1,0 +1,8 @@
+/* main.css */
+
+@import url("common.css");
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+}
