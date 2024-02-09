@@ -3,9 +3,19 @@
 html {
     --primary-text-color: #000;
     --primary-bg-color: #fff;
+
+    /* LECTURE-05   TASK 8 */
+    /* - Визначити у глобальній області видимості змінні: */
+    --primary-font-family: 'Roboto', sans-serif;
+    --primary-font-size: 0.875rem;
 }
 
 footer {
     --footer-text-color: #fff;
     --footer-bg-color: #000;
+}
+
+/* - Встановіть для тега a властивість text-decoration: none; у файлі css/common.css */
+a {
+    text-decoration: none;
 }

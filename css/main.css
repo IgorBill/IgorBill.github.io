@@ -5,4 +5,35 @@
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
+
+    /* LECTURE-05   TASK 8 */
+    /* Встановити, за допомогою визначених у файлі css/common.css змінних, властивості елемента body */
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+}
+
+/* LECTURE-05   TASK 9 */
+/* Встановити властивість font-weight: 700 для елементів h1, h2, h3 */
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Встановити властивість font-size: 1.45rem для елемента h1 */
+h1 {
+    font-size: 1.45rem;
+}
+
+/* Встановити властивість font-size: 1.3rem для елемента h2 */
+h2 {
+    font-size: 1.3rem;
+}
+
+/* Визначити клас .list-unstyled з властивістю list-style: none */
+.list-unstyled {
+    list-style: none;
+}
+
+/* Визначити клас .footer-social */
+.footer-social{
+    
 }
