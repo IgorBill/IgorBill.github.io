@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        /* ================ TASK 1 ================ */
+        /* - Встановити background для класу negative як лінійний градієнт, що направлений вліво та має такі точки зупинки: -50%, -10%, 0%, 100%, 150%. Для кожної точки зупинки встановити колір, що змінюється від світло-синього до темно-синього.  */
+        .percents {
+            height: 150px;
+            background: linear-gradient(to left, 
+                rgb(12, 45, 122) -50%,
+                rgb(8, 47, 138) -10%,
+                rgb(40, 94, 219) 0%,
+                rgb(59, 150, 211) 100%,
+                rgb(106, 210, 252) 150%);
+        }
+
+        /* - Встановити background для класу percents як лінійний градієнт, що направлений вниз та має такі точки зупинки: 2em, 4em, 8em, 16em, 32em, 64em, 128em. Для кожної точки зупинки встановити колір, що змінюється від світло-зеленого до темно-зеленого.  */
+        .negative {
+            height: 150px;
+            background: linear-gradient(to bottom, 
+                rgb(0, 255, 0) 2em,
+                rgb(0, 200, 0) 4em,
+                rgb(0, 120, 0) 8em,
+                rgb(0, 100, 0) 16em,
+                rgb(0, 70, 0) 32em,
+                rgb(0, 45, 0) 64em,
+                rgb(0, 20, 0) 128em);
+        }
+
+        /* - Встановити background для класу radial два радіальних градієнта з типом ellipse, перший з яких містить 2 кольори - помаранчевий та прозорий і направлений вверх, а другий містить 2 кольори - червоний та прозорий і направлений вниз.  */
+        .radial {
+            height: 150px;
+            background: radial-gradient(ellipse at top, #ff4a00, transparent),
+                radial-gradient(ellipse at bottom, #ff0000, transparent);
+        }
+    </style>
+</head>
+
+<body class="body">
+    
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="negative">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="radial">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <!-- ================ TASK 2 ================ -->
+    <!-- Створити svg-прямокутник розміром 100х100 з координатами 20, 20. Для обрамлення встановити колір #1c87c9 та товщину лінії 4. Встановити фон прямокутника lightgray. -->
+    <svg width="200" height="200">
+        <rect x="20" y="20" width="100" height="100" fill="lightgray" stroke="#1c87c9" stroke-width="4"/>
+    </svg>
+
+    <!-- ================ TASK 3 ================ -->
+    <!-- Створити svg-коло розміром 200х200 радіусом = 60 та центром з координатами 100, 70. Для обрамлення встановити червоний колір та товщину лінії 4. Встановити фон кола lightgray. -->
+    <svg width="200" height="200">
+        <circle cx="100" cy="70" r="60" fill="lightgray" stroke="red" stroke-width="4"/>
+    </svg>
+
+    <!-- ================ TASK 4 ================ -->
+    <!-- Створити svg-малюнок годинника, що показує час = 3 години -->
+    <svg width="200" height="200" fill="yellowgreen" stroke="black" stroke-width="4">
+        <circle cx="100" cy="70" r="60"/>
+        <path d="M100 10v5z M160 70h-5z M100 130v-5z M40 70h5z" stroke-width="2"/>
+        <path d="M130 18l-3 5z M152 40l-5 3z M152 100l-5 -3z M125 118l3 5z M70 122l3 -5z M48 100l5 -3z M48 40l5 3z M70 18l3 5z" stroke-width="1"/>
+        <path d="M100 70 h54z M100 70 v-54z" stroke-width="3"/>        
+    </svg>
+
+    <!-- ================ TASK 5 ================ -->
+    <!-- Створити svg-малюнок зірки (необов'язкове завдання) -->
+    <svg width="300" height="300" stroke-width="3">
+        <polygon stroke="green" fill="yellow" points="145,5 50,295 295,100 5,100 250,295" />
+    </svg>
+</body>
+</html>
