@@ -59,6 +59,40 @@ div ~ p {
     color: salmon;
 }
 
+/* TASK 5 */
+    /* Маємо іменовані кольори black, blue, green, red, white, yellow */
+    /* визначати ці кольори за допомогою шістнадцяткового коду: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. */
+        /* black - #000000, 
+        blue - #0000FF, 
+        green - #00FF00, 
+        red - #FF0000, 
+        white - #FFFFFF, 
+        yellow - #FFFF00 */
+
+    /* визначати ці кольори у десятковій системі числення за допомогою функції RGB. */
+        /* black - rgb(0 0 0), 
+        blue - rgb(0 0 255), 
+        green - rgb(0 255 0), 
+        red - rgb(255 0 0), 
+        white - rgb(255 255 255), 
+        yellow - rgb(255 255 0) */
+
+    /* визначати ці кольори, використовуючи відсотки. */
+        /* black - hsl(0 0% 0%), 
+        blue - hsl(240 100% 50%), 
+        green - hsl(120 100% 25%), 
+        red - hsl(0 100% 50%), 
+        white - hsl(0 0% 100%), 
+        yellow - hsl(60 100% 50%) */
+
+    /* визначати ці кольори використовуючи альфа-канал, що задає прозорість. */
+        /* black - rgb(0 0 0 / 1), 
+        blue - rgb(0 0 255 / 1), 
+        green - rgb(0 255 0 / 1), 
+        red - rgb(255 0 0 / 1), 
+        white - rgb(255 255 255 / 1), 
+        yellow - rgb(255 255 0 / 1) */
+
 /* TASK 6 */
 /* Використовцючи hsl, створіть для класу translucent-box напівпрозору властивість background з такими значеннями:
     - Hue = 0deg
@@ -66,7 +100,7 @@ div ~ p {
     - Lightness =  50% 
 */
 .translucent-box {
-    background: hsla(0, 100%, 50%, 0.5);
+    background: hsl(0 100% 50% / 0.5);
     height: 50px;
 }
 
