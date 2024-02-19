@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture #9 Управління потоком</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>              
+        img {
+            width: 250px;
+            margin-left: 17px;
+            margin-bottom: 10px;
+            /* ================ TASK 1 ================ */
+            /* Перемістити зображення вправо */
+            float: right;
+        }
+
+        /* ================ TASK 2 ================ */
+        /* визначіть CSS-властивості position: static та background: yellow для класу static-position */
+        .static-position{
+            position: static;
+            background: yellow;
+        }
+
+        /* визначіть CSS-властивості для класу relative-position position: relative, background: red, розташуйте його зверху та зліва на відстані 130px */
+
+        .relative-position {
+            position: relative;
+            background: red;
+            top: 130px;
+            left: 130px;
+        }
+        /* визначіть CSS-властивості для класу absolute-position position: absolute background: blueviolet, розташуйте його зверху та зліва на відстані 30px */
+        .absolute-position  {
+            position: absolute;
+            background: blueviolet;
+            top: 30px;
+            left: 30px;
+        }
+
+        /* додайте наступне до свого CSS, щоб зробити перший абзац також абсолютно позиціонованим: */
+        p:nth-of-type(1) {            
+            position: absolute;
+            background: lime;
+            top: 10px;
+            right: 30px;
+            /* Що потрібно додати до правила p:nth-of-type(1) , щоб змінити порядок відображення першого абзацу у стеку розташування елементів */
+            /* Треба додати z-index */
+            z-index: 100;            
+        }
+
+        /* ================ TASK 3 ================ */
+        /* розмістіть елемент h1 у верхній частині вікна на білому тлі та зафіксуйте його позицію */
+        h1 {
+            background: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            margin: 0;
+        }
+
+        /* ================ TASK 4 ================ */        
+        dt {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 1em 0;
+            /* Що треба додати до визначення dt, щоб змусити панель навігації прокручуватися разом зі сторінкою до певної точки, а потім залишатися у верхній частині сторінки. */
+            position: sticky;
+            top: 37px;
+        }
+
+        h2 {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Управління потоком</h1>
+    <p>
+        Examples of the CSS float Property
+        Below are some examples of how the CSS float property works.
+        <img src="example.jpg">
+    </p>
+    
+    <p class="absolute-position">Абсолютне позиціонування. Абсолютно розміщені елементи вилучаються зі звичайного потоку документа. Після видалення елемента зі звичайного потоку елементи розташовуються безпосередньо по відношенню до їхнього батьківського елемента, який розташований відносно або абсолютно.</p>
+
+    <p class="static-position">Статичне позиціонування є типовим для кожного елемента. Це просто означає, помістіть елемент у звичайне положення в документі.</p>
+
+    <p class="relative-position">
+        Відносне позиціювання. Положення елемента встановлюється відносно його поточного положення. Додавання властивостей left, top, right і bottom змінює позицію елемента і зрушує його в ту чи іншу сторону. Ця властивість дозволяє змінювати позицію елемента без зміни макету.
+    </p>    
+
+    <h2>Sticky positioning</h2>
+
+    <dl>
+        <dt>A</dt>
+        <dd>Apple</dd>
+        <dd>Ant</dd>
+        <dd>Altimeter</dd>
+        <dd>Airplane</dd>
+        <dt>B</dt>
+        <dd>Bird</dd>
+        <dd>Buzzard</dd>
+        <dd>Bee</dd>
+        <dd>Banana</dd>
+        <dd>Beanstalk</dd>
+        <dt>C</dt>
+        <dd>Calculator</dd>
+        <dd>Cane</dd>
+        <dd>Camera</dd>
+        <dd>Camel</dd>
+        <dt>D</dt>
+        <dd>Duck</dd>
+        <dd>Dime</dd>
+        <dd>Dipstick</dd>
+        <dd>Drone</dd>
+        <dt>E</dt>
+        <dd>Egg</dd>
+        <dd>Elephant</dd>
+        <dd>Egret</dd>
+    </dl>
+</body>
+</html>
