@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+        /* ================ TASK 1 ================ */
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 700px;
+            /* - розподілити простір між елементами flex так, щоб вони мали однакову ширину та заповнювали весь доступний простір. Закоментуйте цей рядок. */
+            /* justify-content: space-between;   */
+        }
+
+        /* - Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue */
+        /* Формула: Item width = ( (flex-grow / total flex-grow) * available space) + initial item width */
+
+        .item-blue {
+            background-color: blue;
+            flex-grow: 3;
+            /* Ширина: 400px = ((3 / 4) * 400) + 100 */
+        }
+        .item-orange {
+            background-color:orange; 
+            /* Ширина: 100px = ((0 / 4) * 400) + 100 */ 
+        }
+        .item-green {
+            background-color:green;
+            flex-grow: 1;
+            /* Ширина: 200px = ((1 / 4) * 400) + 100 */ 
+        }
+
+        .item {
+            color: white;
+            width: 100px;                      
+        }
+    </style>
+
+</head>
+<body>
+    <h2>CSS Flex Property</h2>
+    <div class="wrapper">
+        <div class="item item-blue">CSS</div>
+        <div class="item item-orange">Flex</div>
+        <div class="item item-green">Property</div>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="navbar/index.html">navbar</a></li>
+            <li><a href="layout/index.html">layout</a></li>
+        </ul>
+    </div>
+</body>
+</html>
