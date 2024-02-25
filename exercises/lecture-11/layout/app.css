@@ -1,0 +1,32 @@
+/* ================ TASK 2 ================ */
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+
+    /* Створіть сітку з 3-х колонок. */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Налаштуйте grid-властивості так, щоб header займав 3 колонки, main - 2 колонки, footer - 3 колонки. */
+    grid-template-areas: 
+        "h h h"
+        "s m m"
+        "f f f";
+}
+
+.header {
+    grid-area: h;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: s;
+}
+
+.main {
+    grid-area: m;
+}
+
+.footer {
+    grid-area: f;
+    text-align: center;
+}
