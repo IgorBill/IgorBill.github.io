@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+        'use strict';       
+        /* ================ TASK 1 ================ */
+        // В середині script визначте 2 змінні message1 зі значенням Hello та message2 зі значенням JavaScript. Використовуючи ці змінні та alert, виконайте відображення рядка "Hello JavaScript!".
+        let message1 = "Hello";
+        let message2 = "JavaScript";
+        alert (message1 + " " + message2 + "!");
+
+        /* ================ TASK 2 ================ */
+        // Виправити помилку у коді
+        let message;      
+        message = "hello"; // в лапках
+        message = 123456;
+
+        /* ================ TASK 3 ================ */
+        // Напишіть програму, що запитує у користувача значення двох змінних x, y, та виводить їх суму
+        let first = prompt("Введіть перше число:");
+        let second = prompt("Введіть друге число:");
+        let sum = parseInt(first) + parseInt(second);
+        alert("Сума чисел: " + sum);
+
+        /* ================ TASK 4 ================ */
+        let a1 = 9007199254740991n; //додав n
+        let b1 = 9007199254740991n;
+        console.log(a + b); 
+
+        /* ================ TASK 5 ================ */
+        // Перепишіть код так, щоб результат дорівнював 5
+        let apples = "2";
+        let oranges = "3";
+        alert( +apples + +oranges );
+
+        /* ================ TASK 6 ================ */
+        // Які кінцеві значення всіх змінних a, b, c і d після виконання наведеного нижче коду?
+        let a = 1, b = 1;
+        let c = ++a; // c=2, a=2
+        let d = b++; // d=1, b=2
+
+        /* ================ TASK 7 ================ */
+        // Які значення aa і x після виконання наведеного нижче коду?
+        let aa = 2;
+        let x = 1 + (aa *= 2); //x=5, aa=4
+
+        /* ================ TASK 8 ================ */
+        // Які результати цих виразів?
+        
+        "" + 1 + 0 //10
+        "" - 1 + 0 //-1
+        true + false //1
+        6 / "3" //2
+        "2" * "3" //6
+        4 + 5 + "px" //9px
+        "$" + 4 + 5 //$45
+        "4" - 2 //2
+        "4px" - 2 //NaN
+        "  -9  " + 5 //  -9  5
+        "  -9  " - 5 //-14
+        null + 1 //1
+        undefined + 1 //NaN
+        NaN + 1 //NaN
+
+        /* ================ TASK 9 ================ */
+        // скоротити цей код за допомогою операторів += і *=:
+        let n = 2;
+        n += 5;
+        n *= 2;
+
+        /* ================ TASK 10 ================ */
+        // Перетворити змінні n1, n2, n3, n4 на числа
+        let n1 = Number("   123   ");
+        let n2 = parseInt("123z");
+        let n3 = +true;
+        let n4 = +false;      
+        console.log(n1, n2, n3, n4);
+
+    </script>
+
+</body>
+</html>
