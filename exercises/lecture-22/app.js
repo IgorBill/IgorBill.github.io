@@ -3,8 +3,8 @@
 //Використовуючи цикл for, вивести на консоль кожний елемент з отриманого об'єкту.
 let h1 = document.getElementsByTagName('h1');
 console.log(`Type: ${typeof(h1)}, Length: ${h1.length}`);
-for(const el of h1) {
-    console.log(el);
+for(let i = 0; i < h1.length; i++) {
+    console.log(h1[i]);
 }
 
 /* ================ TASK 2 ================ */
@@ -34,15 +34,15 @@ p4.classList.add('fourth', 'border');
 /* ================ TASK 6 ================ */
 // Знайти всі елементи з класом container. Використовуючи цикл for, вивести на консоль перший елемент для кожного зі знайдених елементів.
 let containers = document.querySelectorAll('.container');
-for (const container of containers) {
-    let firstElement = container.firstElementChild;
+for (let i = 0; i < containers.length; i++) {
+    let firstElement = containers[i].firstElementChild;
     console.log(firstElement);
 }
 
 /* ================ TASK 7 ================ */
 // Знайти всі елементи з класом container. Використовуючи цикл for, вивести на консоль вміст першого елементу для кожного першого елемента зі знайдених елементів.
-for (const container of containers) {
-    let firstTextContent = container.firstElementChild.textContent;
+for (let i = 0; i < containers.length; i++) {
+    let firstTextContent = containers[i].firstElementChild.textContent;
     console.log(firstTextContent);
 }
 
