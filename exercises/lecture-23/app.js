@@ -47,15 +47,12 @@ btnSuccess.addEventListener('focusout', () => {
 const btnDark = document.querySelector('.btn-dark');
 const btnLight = document.querySelector('.btn-light');
 
+btnLight.classList.toggle('hide');
+
 function toggleMode() {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        btnLight.classList.remove('hide');
-        btnDark.classList.add('hide');
-    } else {
-        btnLight.classList.add('hide');
-        btnDark.classList.remove('hide');
-    }
+    document.body.classList.toggle('dark-mode');    
+    btnLight.classList.toggle('hide');
+    btnDark.classList.toggle('hide');    
 }
 
 btnDark.addEventListener('click', toggleMode);
