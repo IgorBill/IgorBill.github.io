@@ -1,0 +1,7 @@
+th {
+    background-color: blue;
+    color: azure;
+}
+td, th {
+    border: 2px solid gray;
+}
