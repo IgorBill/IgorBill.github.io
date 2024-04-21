@@ -2,40 +2,45 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+// Task 34
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 function App() {
-  const [count, setCount] = useState(0)
-  
-// 3. створити новий JSX-елемент з назвою jsxElement
-  const jsxElement = <h1>I am a JSX element</h1>;
+  const [count, setCount] = useState(0)  
 
-//4. створити новий JSX-елемент header
-const header = (
-    <header>
-        <h1>Welcome to React</h1>
-        <h2>Getting Started React</h2>
-        <h3>JavaScript Library</h3>
-    </header>
-)
+// 33.3. створити новий JSX-елемент з назвою jsxElement
+//   const jsxElement = <h1>I am a JSX element</h1>;
 
-//5. створити новий JSX-фрагмент з таким вмістом
-const newJsxElement = (
-    <>
-        <h1>Welcome to React</h1>
-        <h2>Getting Started React</h2>
-        <h3>JavaScript Library</h3>
-    </>
-)
+//33.4. створити новий JSX-елемент header
+// const header = (
+//     <header>
+//         <h1>Welcome to React</h1>
+//         <h2>Getting Started React</h2>
+//         <h3>JavaScript Library</h3>
+//     </header>
+// )
 
-//6. створити новий JSX-елемент footer з таким вмістом
-const footer = (
-    <>
-        <p>Copyright &copy; 2024</p>
-    </>
-)
+//33.5. створити новий JSX-фрагмент з таким вмістом
+// const newJsxElement = (
+//     <>
+//         <h1>Welcome to React</h1>
+//         <h2>Getting Started React</h2>
+//         <h3>JavaScript Library</h3>
+//     </>
+// )
+
+//33.6. створити новий JSX-елемент footer з таким вмістом
+// const footer = <p>Copyright &copy; 2024</p>
+ 
 
   return (
     <>
+    {/* Task 34 */}
+    <Navbar />
+    <Gallery />
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -57,19 +62,22 @@ const footer = (
         Click on the Vite and React logos to learn more
       </p>
 
+    {/* Task 34 */}
+    <Footer />
+
       {/* відобразити елемент jsxElement */}
-      {jsxElement}
+      {/* {jsxElement} */}
 
       {/* відобразити елемент header */}
-      {header}
+      {/* {header} */}
 
       {/* відобразити JSX-фрагмент */}
-      {newJsxElement}
+      {/* {newJsxElement} */}
 
       {/* відобразити елемент footer */}
-      {footer}
+      {/* {footer} */}
     </>
   )
 }
 
-export default App
+export default App;
