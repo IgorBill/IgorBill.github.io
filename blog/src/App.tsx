@@ -10,6 +10,9 @@ import Gallery from "./components/Gallery";
 // Task 35
 import Blog from './components/Blog';
 
+// Task 36
+import Post from './components/Post';
+
 function App() {
   const [count, setCount] = useState(0)  
 
@@ -91,6 +94,12 @@ const post = {
 
       {/* відобразити елемент footer */}
       {/* {footer} */}
+
+
+      {/* Task 36 */}
+      <>
+      <Post />
+      </>
     </>
   )
 }
