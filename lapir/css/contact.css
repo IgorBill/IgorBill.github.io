@@ -1,0 +1,136 @@
+.contact {
+    padding: 2rem;
+}
+
+.contact__header {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.contact__address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1.5rem;
+}
+
+.contact__addr,
+.contact__insta,
+.contact__tel,
+.contact__mail {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contact__link:hover img {
+    transition: all .3s ease-in-out;
+}
+
+.contact__link:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 880px) {
+    .contact__map iframe {
+        width: 320px;
+    }
+
+}
+
+.contact__container {
+    display: flex;
+
+    @media (max-width: 880px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-me {
+    padding: 2rem;
+    background: var(--second-color);
+    position: relative;
+}
+
+.contact-me__container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--second-color); 
+    position: relative;
+    z-index: 1;
+}
+
+.contact-me__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--main-color);    
+}
+
+.contact-me__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 2rem 2rem 0;
+}
+
+.contact-me__form-input {
+    height: 4rem;
+    padding: 0 2rem;
+    color: #666;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.form-textarea {
+    height: 150px;
+    padding-top: 10px;
+}
+
+.contact-me__button {
+    padding: 1rem 2rem;
+    margin-top: 0.8rem ;
+    margin-bottom: 1.5rem;
+    background-color: #F26B50;
+    color: #FFF;
+    align-self: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    transition: all ease-out 0.5s;
+}
+
+.contact-me__button:hover {
+    background-color: #b64129;
+}
+
+
+@media screen and (max-width: 640px) {
+    .contact-me__title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contact-me__title {
+        font-size: 1.5rem;
+    }
+    .contact-me__form {
+        margin-top: 2rem;
+    }
+    .contact-me__form-input {
+        height: 3rem;
+        padding: 0 10px;
+        font-size: .9rem;
+    }
+    .form-textarea {
+        height: 100px;
+        padding-top: 10px;
+    }
+}
+

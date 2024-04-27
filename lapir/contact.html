@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL.LAPIR</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrapper-page">
+        <!-- page header -->
+        <header class="page-header">
+            <!-- brand -->
+            <a href="./index.html" class="brand">
+                <img class="logo" src="./images/logo.jpg" alt="Logo">
+            </a>
+            <!-- <label for="toggler">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label> -->
+            <input type="checkbox" id="toggler">
+            <label class="burger" for="toggler"><span></span></label>
+            <!-- navigation -->
+            <nav class="navbar">
+                <a href="./index.html">Головна</a>
+                <a href="./catalog.html">Каталог</a>
+                <!-- <a href="./blog.html">Blog</a> -->
+                <a href="./about.html">Про нас</a>
+                <a href="./contact.html">Контакти</a>    
+            </nav>
+
+            <nav class="toolbar">
+                <a href="#" class="far fa-heart"></a>
+                <a class="cart" href="./cart.html" class="fas fa-dolly-flatbed">(<span id="cart-amount">0</span>)</a>
+                <a href="#" class="far fa-user"></a>
+            </nav>
+        </header>
+    
+        <section class="breadcrumb-bg-light mt-5">
+            <div class="container py-3 px-5">
+                <div class="breadcrumb-container">
+                    <div class="breadcrumb-title">
+                        Контакти
+                    </div>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Головна</a></li>
+                        <li class="breadcrumb-item active">Контакти</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact__header">Примірка</h2>
+            <div class="contact__container">
+                <div class="contact__address">
+                    <div class="contact__info">
+                        <p>Можна приміряти:</p>                        
+                    </div>
+                    <div class="contact__addr">
+                        <a class="contact__link" href="https://www.google.com/maps/place/%D0%93%D1%83%D0%BB%D0%BB%D0%B8%D0%B2%D0%B5%D1%80,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.438611,30.5230559,17z/data=!4m15!1m8!3m7!1s0x40d4cefe300f468f:0xe60fad0916b75e94!2z0JPRg9C70LvQuNCy0LXRgCwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.438611!4d30.5230559!16s%2Fm%2F0bh84t4!3m5!1s0x40d4cefe300f468f:0xe60fad0916b75e94!8m2!3d50.438611!4d30.5230559!16s%2Fm%2F0bh84t4?entry=ttu">
+
+                            <img class="contact__img" src="./images/address.png" alt="address">
+                        </a>
+                        <div>
+                            <p>Спортивна площа, 1a, Київ, 01023.</p>
+                            <p>- в Києві в ТРЦ «Гулівер» в шоурумі «BRAND ROOM» (знаходиться на 3-му поверсі).</p>
+                        </div>
+                    </div>
+                    <div class="contact__insta">
+                        <a class="contact__link" href="https://instagram.com/el.lapir">
+                            <img class="contact__img" src="./images/instagram.png" alt="instagram">
+                        </a>
+                        <p>АБО замовити онлайн, написавши нам в дірект✔️</p>
+                    </div>
+                    <div class="contact__tel">
+                        <a class="contact__link" href="tel:+380501234567">
+                            <img class="contact__img" src="./images/tel.png" alt="tel">
+                        </a>
+                        <p>Tel.: +38 050 123 45 67</p>
+                    </div>
+                    <div class="contact__mail">
+                        <a class="contact__link" href="mailto:el.lapir@gmail.com">
+                            <img class="contact__img" src="./images/mail.png" alt="mail">
+                        </a>
+                        <p>el.lapir@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1226442954376!2d30.52091105386391!3d50.43881618616173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe0307e81f%3A0x1f234c3b0a0b492!2sGulliver%20-%20Palats%20Sport%20Metro!5e0!3m2!1sru!2sua!4v1714122876773!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-me" class="contact-me">      
+            <div class="contactForCheck hidden"></div>
+            <div class="contact-me__container hidden">              
+                <h2 class="contact-me__title hidden">Написати листа</h2>
+                <form class="contact-me__form hidden" action="https://formspree.io/f/xeqbpvqw" method="POST">                    
+                    <input class="contact-me__form-input" type="text" name="name" placeholder="Ваше Ім'я" required>
+                    <input class="contact-me__form-input" type="tel" name="tel" placeholder="Ваш Телефон" required>
+                    <input class="contact-me__form-input" type="email" name="email" placeholder="Ваш e-mail" required>                    
+                    <textarea class="contact-me__form-input form-textarea" name="description" placeholder="Повідомленя" required></textarea>
+                    <button class="contact-me__button" type="submit">Send me</button>
+                </form>
+            </div>
+        </section>
+        
+        
+        <!-- <section id="contact" class="mb-3">
+            <div class="container py-3 px-4">
+                <div class="contact-main">
+                    <form action="www.site" class="form">
+                        <div class="form-container">
+                            <div class="input-group">
+                                <div>
+                                    <label for="first-name" class="form-label">Your First Name *</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="Your First Name here.." required>
+                                </div>
+                                <div>
+                                    <label for="last-name" class="form-label">Your Last Name *</label>
+                                    <input type="text" class="form-control" id="last-name" placeholder="Your Last Name here..." required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="form-label">Your Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="message" class="form-label">Your message *</label>
+                                <textarea id="message" class="form-control" rows="4" placeholder="Drop Your message here..." required></textarea>
+                            </div>
+                            <div class="input-group">
+                                <button class="btn btn-primary" type="submit">Send message</button>
+                            </div>
+                        </div>
+    
+                    </form>
+                
+                </div>
+                
+            </div>
+        </section> -->
+    </div>
+    
+
+    <script src="./js/db.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL.LAPIR</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <svg width="0" height="0" hidden>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="delivery-time" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M62 46v-5l-8-7h-8"/>
+            <circle cx="24" cy="54" r="4"/>
+            <circle cx="54" cy="54" r="4"/>
+            <path d="M50 54H28m-8 0h-4v-8h46v8h-4M24.5 24H46v22m-30 0V29.8M2 38h6m-2 8h2"/>
+            <circle cx="14" cy="18" r="12"/>
+            <path d="M14 12v8h6"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="helpline-24h" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+                    <path d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z"/>
+                    <path d="M54 2l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2A6 6 0 0 0 32 3.6"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="label-tag" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+                    <path d="M25.6 61L3 38.4 38.4 3l21.2 1.4L61 25.6 25.6 61z"/>
+                    <circle cx="48" cy="15" r="4"/>
+                    <path d="M31.3 21.4l11.3 11.3m-22.6 0l8.5 8.5M25.6 27l5.7 5.7"/>
+        </symbol> 
+    </svg>
+
+    <div class="wrapper-page">
+        <!-- page header -->
+        <header class="page-header">
+            <!-- brand -->
+            <a href="./index.html" class="brand">
+                <img class="logo" src="./images/logo.jpg" alt="Logo">
+            </a>
+            <!-- <label for="toggler">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label> -->
+            <input type="checkbox" id="toggler">
+            <label class="burger" for="toggler"><span></span></label>
+            <!-- navigation -->
+            <nav class="navbar">
+                <a href="./index.html">Головна</a>
+                <a href="./catalog.html">Каталог</a>
+                <!-- <a href="./blog.html">Blog</a> -->
+                <a href="./about.html">Про нас</a>
+                <a href="./contact.html">Контакти</a>    
+            </nav>
+
+            <nav class="toolbar">
+                <a href="#" class="far fa-heart"></a>
+                <a class="cart" href="./cart.html" class="fas fa-dolly-flatbed">(<span id="cart-amount">0</span>)</a>
+                <a href="#" class="far fa-user"></a>
+            </nav>
+        </header>
+
+        <!-- hero -->
+        <section id="hero" class="hero mt-5 mb-3">
+            <div data-aos="fade-down-left" data-aos-duration="1000" class="container made">
+                <div class="made-ukraine">
+                    <a href="https://madeinukraine.gov.ua/" target="_blank">
+                        <img src="./images/made-in-ukraine.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-down-right" data-aos-duration="3000" class="container py-5 px-4">
+                <h1 class="hero-title mb-3">El.LAPIR</h1> 
+                <p class="hero-text">УКРАЇНСЬКИЙ БРЕНД</p>
+                <p class="hero-text">жіночого одягу.</p>
+                <p class="hero-text">З нами ти засяєш!</p>
+                <a href="./catalog.html" class="hero-link">Переглянути коллекцію &#129042;</a>
+            </div>
+        </section>
+
+         <!-- carousel -->
+        <section class="py-3">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                    <h2 class="text-uppercase mb-3">Український бренд жіночого одягу</h2>
+                </div>
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-01.jpg" alt="aesthetic-01">
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/amelia/amelia-black-01.jpg" alt="Amelia">
+                                    <strong class="category-item-title">Amelia</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/femi/femi-01.jpg" alt="femi">
+                                    <strong class="category-item-title">Femi</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-02.jpg" alt="aesthetic-02">
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/kerol/kerol-01.jpg" alt="Kerol">
+                                    <strong class="category-item-title">Kerol</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/jessika/jessika-10.jpg" alt="Jessika">
+                                    <strong class="category-item-title">Jessika</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-03.jpg" alt="aesthetic-03">
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/lady/lady-01.jpg" alt="Lady">
+                                    <strong class="category-item-title">Lady</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/lilian/lilia-05.jpg" alt="Lilian">
+                                    <strong class="category-item-title">Lilian</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-04.jpg" alt="aesthetic-04">
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/luisa/luisa-01.jpg" alt="Luisa">
+                                    <strong class="category-item-title">Luisa</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/lola/lola-01.jpg" alt="Lola">
+                                    <strong class="category-item-title">Lola</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-05.jpg" alt="aesthetic-05">
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/miranda/miranda-01.jpg" alt="Miranda">
+                                    <strong class="category-item-title">Miranda</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/molli/molli-11.jpg" alt="Molli">
+                                    <strong class="category-item-title">Molli</strong>
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-06.jpg" alt="aesthetic-06">
+                                </a>
+                            </div>
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/monro/monro-12.jpg" alt="Monro">
+                                    <strong class="category-item-title">Monro</strong>
+                                </a>
+                            </div> 
+                            <div class="slide carousel-item">
+                                <a class="category-item" href="./catalog.html">
+                                    <img src="./images/aesthetics/aesthetic-07.jpg" alt="aesthetic-07">
+                                </a>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- main content -->
+        <main class="mb-3">
+            <div class="container px-4 bm-3">
+                <div data-aos="fade-up" data-aos-duration="1000"  class="product-header">
+                    <h2>Наша <span>продукція</span></h2>
+                </div>
+            <div class="product-container"></div>
+            
+            </div>
+        </main>
+ 
+        <section class="testimonials">
+            <div class="testimonial-container">
+                <div data-aos="fade-left" data-aos-duration="1000" class="testimonial-main-content">
+                    <h2>Відгуки</h2>
+                </div>
+                <ul class="testimonial-list-content">
+                    <li data-aos="flip-right" data-aos-duration="1000"  class="testimonial-item">
+                        <div class="testimonial-card-item">
+                            <img src="./images/luisa/luisa-11.jpg" alt="user1">
+                            <div class="testimonial-card-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis consequatur nesciunt. 
+                                </p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li data-aos="flip-up" data-aos-duration="1000" class="testimonial-item">
+                        <div class="testimonial-card-item">
+                            <img src="./images/molli/molli-10.jpg" alt="user2">
+                            <div class="testimonial-card-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis consequatur nesciunt. 
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-aos="flip-left" data-aos-duration="1000"  class="testimonial-item">
+                        <div class="testimonial-card-item">
+                            <img src="./images/monro/monro-15.jpg" alt="user3">
+                            <div class="testimonial-card-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis consequatur nesciunt. 
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2 data-aos="fade-up" data-aos-duration="1000" class="faq__title">поширені запитання</h2>
+
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="accordion-wrapper">
+                <div class="accordion">
+                    <div data-tab="tab-1" class="accordion__title">
+                        <h3>Коли купуєш українське — усі в плюсі</h3>
+                        <span></span>
+                    </div>
+                    <div id="tab-1" class="accordion__content">
+                        Ми щодня вибираємо, що купити. Але кожна витрачена гривня може працювати ще ефективніше, адже коли ми купуємо українське, то в середньому до 40% від вартості повернеться до держави й дасть більше можливостей для підтримки наших міст, наших людей і тих, хто нас захищає
+                    </div>
+                </div>
+    
+                <div class="accordion">
+                    <div data-tab="tab-2" class="accordion__title">
+                        <h3>Чому так?</h3>
+                        <span></span>
+                    </div>
+                    <div id="tab-2" class="accordion__content">
+                        Бо купуючи український сир, ковбасу, косметику, куртку або керамічну плитку, ми справді платимо зарплати людям на виробництві, оренду власникам складських і торгових приміщень, робимо внесок у пенсію нашим батькам і забезпечуємо можливість фінансування армії.
+                    </div>
+                </div>
+    
+                <div class="accordion">
+                    <div data-tab="tab-3" class="accordion__title">
+                        <h3>А ще!</h3>
+                        <span></span>
+                    </div>
+                    <div id="tab-3" class="accordion__content">
+                        А ще посилюємо український бізнес і робимо економіку стійкішою, щоб країна була сильною та перемагала. Ні, це не означає, що однією покупкою ми розв'язуємо всі проблеми. Але коли так роблю я, ти, наші родичі, друзі, сусіди та колеги, то це вже система — і тоді ми посилюємо одне одного та Україну. Бо коли купуєш українське — усі в плюсі
+                    </div>
+                </div>            
+            </div>
+        </section>
+
+        <dialog id="details">
+            <a href="#!" title="Close" class="close fas fa-times"></a>
+            <span class="dialog-main"></span> 
+        </dialog>    
+    </div>
+
+    <script src="./js/accordeon.js"></script>
+    <script src="./js/db.js"></script>
+
+    <script src="./js/app.js"></script>
+
+    <!-- Анімація AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
