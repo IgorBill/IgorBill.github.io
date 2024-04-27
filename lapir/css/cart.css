@@ -7,11 +7,6 @@
     }  
 }
 
-/* Відключення кошика */
-.cart {
-    display: none;
-}
-
 .cart-main {
     width: 100%;
     margin: 0 auto;

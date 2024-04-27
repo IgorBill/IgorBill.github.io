@@ -131,6 +131,9 @@
         > a:active {
             color: blueviolet;
         }
+        .cart {
+            display: none;
+        }
     }
 }
 
