@@ -1,5 +1,5 @@
-// TASK 36 
-
+// ================ TASK 36 ======================
+/*
 import { useState, useEffect } from "react";
 
 function Post() {
@@ -38,4 +38,46 @@ function Post() {
     );
   }
   
+  export default Post;
+  */
+
+
+// ================ TASK 37 ======================
+
+// Перепишіть функціональний компонент Post.tsx, використовуючи хуки useState, useEffect, useContext, createContext.
+
+// Потрібно створити контекст PostContext Потрібно створити компонент Layout Потрібно створити компонент Header Потрібно створити компонент PostTitle Потрібно створити компонент PostMain
+
+// Компонент Post повинен повертати наступне:
+//   return (
+//       <PostContext.Provider value={post}>
+//           <Layout>
+//           </Layout>
+//       </PostContext.Provider>
+//     );
+
+import { useState, useEffect } from "react";
+import { createContext } from "react";
+import Layout from "./Layout";
+
+// Потрібно створити контекст PostContext
+export const PostContext = createContext('');
+
+function Post() {
+    const [post, setPost] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+            const data = await (await fetch('https://my-json-server.typicode.com/igorbill/db/posts/1')).json();
+            setPost(data);
+        }
+        fetchData();
+    }, []);
+  
+    return (
+        <PostContext.Provider value={post}>
+            <Layout></Layout>
+        </PostContext.Provider>
+    );
+  }
+
   export default Post;
