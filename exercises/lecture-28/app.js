@@ -11,7 +11,7 @@ function isValidEmail(email) {
 }
 
 function isValidPassword(pass) {
-    return /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]/.test(pass);
+    return /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]+/.test(pass);
 }
 
 registrationForm.addEventListener('submit', function(event) {
@@ -45,8 +45,8 @@ registrationForm.addEventListener('submit', function(event) {
         return;
     }
 
-    registrationForm.submit();
     alert('Реєстраці пройшла успішно');
+    registrationForm.submit();
 
     // після успішної реєстрації потрібно скинути значення полів форми.
     registrationForm.reset();
