@@ -13,6 +13,9 @@ import Blog from './components/Blog';
 // Task 36
 import Post from './components/Post';
 
+// Task 38
+import Blog38 from "./pages/Blog38";
+
 function App() {
   const [count, setCount] = useState(0)  
 
@@ -100,6 +103,9 @@ const post = {
       <>
       <Post />
       </>
+
+      {/* TASK 38 */}     
+      <Blog38 />    
     </>
   )
 }
